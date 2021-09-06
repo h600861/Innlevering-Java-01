@@ -12,16 +12,25 @@ public class O3
 		int n = Integer.parseInt(talltxt);
 		int t=1;
 	
-		
-		for (int i = 1; i<=n; i++) 
+		if (n>=0) 
 		{
+			for (int i = 1; i<=n; i++) 
+			{
+				
+				t = t*i; 
 			
-			t = t*i; 
-		
-
+				
+			}
+			showMessageDialog(null,t);
 		}
+	
 		
-		showMessageDialog(null,t);
+		else 
+		{
+			showMessageDialog(null,"trenger et godkjent tall");
+		}
+			
+		
 	}
 
 }
